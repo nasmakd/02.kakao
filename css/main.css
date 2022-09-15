@@ -10,7 +10,7 @@ body{}
 }
 .ico_dot{
     display: inline-block;
-    width: 8px;height: 8px;
+    width: 9px;height: 9px;
     background-color: #ff5575;
     border-radius: 50%;
     border: 2px solid #fff;
@@ -67,11 +67,11 @@ header h1 span{
 	left: 12px;
 }
 .top_left > button{
-    padding: 5px;
+    padding: 5px;position: relative;
 }
 .top_left .ico_dot{
     position: absolute;
-    top: 6px;right: 5px; 
+    top: 5px;right: 3px; 
 }
 .top_right{
 	right: 12px;
