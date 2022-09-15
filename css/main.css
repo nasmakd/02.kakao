@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+body{}
+.ico_friends{
+    display: block;
+    background: url(../img/ico_friends.png) no-repeat 0 0 / 700px 800px;
+    font-size: 1px;
+    color: transparent;
+    overflow: hidden;
+}
+.ico_dot{
+    display: inline-block;
+    width: 10px;height: 10px;
+    background-color: #ff5575;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 1px;line-height: 0;
+    color: transparent;
+    overflow: hidden;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#container{
+    max-width: 640px;
+    min-width: 270px;
+    height: 2000px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 40% ,#bbf9f9 75% ,rgb(255, 171, 255));
+}
+
+header{
+	position: fixed;
+    max-width: 640px;
+    min-width: 270px;
+	margin: 0 auto;
+	top: 0;left: 0;right: 0;
+    background-color: #fff;
+}
+header h1{
+    text-align: center;
+	height: 46px;
+	line-height: 46px;
+}
+header h1 a{
+    display: inline-block;
+    width: 147px;
+    height: 24px;
+    background-image: url(../img/logo_kakaofriends.png);
+    background-size: 147px 24px;	 
+}
+header h1 span{
+    display: none;
+}
+.top_left .ico_gnb_menu{
+    width: 24px;height: 24px;
+    background-position: -520px -60px;
+}
+.top_left, .top_right{
+	position: absolute;
+	top: 6px;
+}
+.top_left{
+	left: 12px;
+}
+.top_left > button{
+    padding: 5px;
+}
+.top_left .ico_dot{
+    position: absolute;
+    top: 5px;right: 3px; 
+}
+.top_right{
+	right: 12px;
+}
+.top_right > button{
+    padding: 5px;
+}
+.top_right .ico_search, .top_right .ico_global{
+    width: 24px;height: 24px;
+}
+.top_right .ico_search{
+    background-position: -40px -20px;
+}
+.top_right .ico_global{
+    background-position: -440px -60px;
+}
+
+
+nav{
+    border-bottom: 1px solid #ccc;
+}
+ul.list_tab{
+	display: flex;
+}
+ul.list_tab li{
+	flex: 1;
+	text-align: center;
+    position: relative;
+}
+
+ul.list_tab li a{
+	display: block;
+	line-height: 43px;
+}
+ul.list_tab li a > span{
+    position: relative;
+}
+nav .ico_dot{
+    position: absolute;
+    top: -2px;right: -10px; 
+}
+ul.list_tab li a.on{
+    font-weight: bold;
+}
+ul.list_tab li a.on::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #000;
+    position: relative;bottom: -1px;
+}
+
+/* main */
+
+main{
+    padding-top: 95px;
+}
+article{}
+article .box{
+    padding: 20px;
+}
+
+.article_header{
+    padding-bottom: 15px;
+}
+.article_header .profile{ 
+    float: left;
+    display: block;
+    width: 40px;height: 40px;
+    background: url('../img/character/tube.png') no-repeat 0 0 / 40px 40px;
+    text-indent: -9999px;
+    border-radius: 15px;
+}
+.article_header .info{ 
+    padding-left: 46px;
+    height: 40px;
+}
+.article_header .info strong{
+    display: block;
+    line-height: 25px;
+}
+.article_header .info .txt_time{
+    display: block;
+    font-size: 13px;
+    color: #808080;
+    line-height: 15px;
+}
+
+.article_cont{}
+.article_cont img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* gnb */
+.dark{
+    display: none;
+    position: fixed;
+    width: 100%;height: 100%;
+    left: 0;top: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+}
+
+#gnb{
+    position: fixed;top: 0;left: -304px;bottom: 0;
+    width: 304px;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 150;
+}
+#gnb .inner{
+    width: 304px;height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+
+.info_user{
+    padding: 35px 6px 24px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_login{
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.info_login span{
+    border-bottom: 1px solid #000;
+}
+.info_inquire{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.info_user .ico_arrow_right{
+    display: inline-block;
+    width: 16px;height: 16px;
+    background-position: -320px 0;
+    vertical-align: top;
+    margin-top: 1px;
+}
+.list_menu{padding: 15px 0;}
+.list_menu > li{
+    
+}
+.list_menu .btn_menu{
+    display: block;
+    width: 100%;
+    line-height: 48px;
+    padding: 0 10px 0 24px;
+    font-size: 15px;font-weight: bold;
+    text-align: left;
+}
+.line::after{
+    content: "";display: block;
+    height: 16px;width: 304px;
+    border-bottom: 1px solid #eee;
+    margin-bottom:16px;
+}
+.list_menu .ico_arrow{
+    display: block;
+    width: 16px;height: 16px;
+    background-position: -360px 0;
+    float: right;
+    margin-top: 15px;
+}
+.list_menu .ico_arrow.on{background-position: -340px 0;}
+.list_menu .ico_dot{position: relative;bottom: 12px;}
+
+.list_sub_wrap{
+    display: none;
+}
+ul.list_char{
+    padding: 16px 0 14px 14px;
+    font-size: 0;
+}
+ul.list_char li{
+    display: inline-block;
+    width: 25%;
+    padding-bottom: 20px;
+}
+ul.list_char li a{
+    display: block;
+    padding:0 10px;
+    color: #555555;
+}
+
+.img_character{
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    background: no-repeat 50% 50% / cover;
+    border-radius: 50%;
+}
+.txt_character{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.character01 .img_character{
+    background-image: url('../img/character/ryan_w.png');
+}
+.character02 .img_character{
+    background-image: url('../img/character/apeach_w.png');
+}
+.character03 .img_character{
+    background-image: url('../img/character/muzi_w.png');
+}
+.character04 .img_character{
+    background-image: url('../img/character/frodo_w.png');
+}
+.character05 .img_character{
+    background-image: url('../img/character/neo_w.png');
+}
+.character06 .img_character{
+    background-image: url('../img/character/tube_w.png');
+}
+.character07 .img_character{
+    background-image: url('../img/character/jayG_w.png');
+}
+.character08 .img_character{
+    background-image: url('../img/character/con_w.png');
+}
+.character09 .img_character{
+    background-image: url('../img/character/choonsik_w.png');
+}
+.character10 .img_character{
+    background-image: url('../img/character/jordy_w.png');
+}
+.character11 .img_character{
+    background-image: url('../img/character/scappy_w.png');
+}
+.character12 .img_character{
+    background-image: url('../img/character/angmond_w.png');
+}
+.character13 .img_character{
+    background-image: url('../img/character/character_20220531165949_OFF.jpg');
+}
+
+.character01:hover .img_character{
+    background-image: url('../img/character/ryan.png');
+}
+.character02:hover .img_character{
+    background-image: url('../img/character/apeach.png');
+}
+.character03:hover .img_character{
+    background-image: url('../img/character/muzi.png');
+}
+.character04:hover .img_character{
+    background-image: url('../img/character/frodo.png');
+}
+.character05:hover .img_character{
+    background-image: url('../img/character/neo.png');
+}
+.character06:hover .img_character{
+    background-image: url('../img/character/tube.png');
+}
+.character07:hover .img_character{
+    background-image: url('../img/character/jayG.png');
+}
+.character08:hover .img_character{
+    background-image: url('../img/character/kakao_con.jpg');
+}
+.character09:hover .img_character{
+    background-image: url('../img/character/choonsik.png');
+}
+.character10:hover .img_character{
+    background-image: url('../img/character/jordy.png');
+}
+.character11:hover .img_character{
+    background-image: url('../img/character/scappy.png');
+}
+.character12:hover .img_character{
+    background-image: url('../img/character/angmond.png');
+}
+.character13:hover .img_character{
+    background-image: url('../img/character/character_20220531165946_ON.jpg');
+}
+
+
+.list_category{
+    font-size: 0;
+    padding: 8px 10px 20px 24px;
+}
+.list_category li{
+    display: inline-block;
+    width: 50%;
+}
+.list_category li a{
+    display: block;
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.banner{}
+.banner a{
+    display: block;
+    padding-left: 16px;
+}
+.banner img{width: 100%;border-radius: 10px;}
+
+.login{padding-bottom: 30px;}
+.login a{
+    display: block;
+    text-align: center;
+    padding: 25px 0;
+    color: #555555;
+    font-size: 13px;line-height: 24px;
+}
+.login .ico_gnb_lock{
+    display: inline-block;
+    width: 24px;height: 24px;
+    background-position: -560px -20px;
+    vertical-align: top;
+}
+
+.login_popup{
+    display: none;
+    position: fixed;
+    top:50%;left: 50%;
+    width: 310px;
+    background-color: #fff;
+    z-index: 110;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 15px;
+    padding: 40px 50px;
+}
+.login_popup img{width: 128px;}
+.login_popup strong{
+    display: block;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.login_popup p{
+    font-size: 14px;
+    margin-top: 8px;
+}
+.login_popup button.kakao_btn{
+    width: 100%;height: 48px;
+    padding: 12px 0;
+    background-color: #ffeb00;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-size: 14px;font-weight: bold;
+    line-height: 24px;
+}
+.login_popup button.close_btn{
+    position: absolute;
+    top: 0;right: 0;
+    padding: 15px;
+}
+.login_popup button.close_btn span{
+    display: block;
+    width: 24px;height: 24px;
+    background-image: url('../img/ico_close.png');
+    background-size: cover;
+}
+.login_popup .ico_kakao{
+    display: inline-block;
+    width: 24px;height: 24px;
+    background-position: -480px -20px;
+    vertical-align: middle;
+}
