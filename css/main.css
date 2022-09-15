@@ -373,7 +373,7 @@ ul.list_char li a{
 .banner{}
 .banner a{
     display: block;
-    padding-left: 16px;
+    padding: 0 14px;
 }
 .banner img{width: 100%;border-radius: 10px;}
 
